@@ -1,0 +1,311 @@
+<html>
+    <head>
+        
+        <script src="https://use.fontawesome.com/2a6d14a43e.js">
+            </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover.css">
+            </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+            </script>
+        <title></title>
+    </head>
+    <body>
+        <nav>
+            <button class="hvr-float-shadow" id="home">Home</button> | <button class="hvr-float-shadow" id="portofolio">Portofolio</button> | <button class="hvr-float-shadow" id="resume">Resume</button> | <button class="hvr-float-shadow" id="contact">Contact</button>
+        </nav>
+        <div id="box">
+            <img id="profile_pic" src="https://lh3.googleusercontent.com/Hhg28rTWnWqTmVIE494fy1yTqVhahpVnKfJirue09ExTJBrjwOoyKOBOABKW3xEGXGYMyFGLp61YHdfcVQe0=w1622-h1378-rw">
+                <hr>
+                <h1 id="name">Dawit Hunegnaw</h1>
+                <h4 id="bio">University Of Victoria<br>
+                    &nbsp;&nbsp;Computer Science<br>
+                    &nbsp;&nbsp;&nbsp;Expected 2020</h4>
+                <div id="icones">
+                    <a href="https://www.freecodecamp.org/dawitth" target="_blank"><i aria-hidden="true" class="fa fa-free-code-camp fa-3x"></i></a> <a href="https://stackoverflow.com/users/8233884/dawit" target="_blank"><i aria-hidden="true" class="fa fa-stack-overflow fa-3x"></i></a> <a href="https://github.com/dawitth" target="_blank"><i aria-hidden="true" class="fa fa-github fa-3x"></i></a>
+                </div>
+                </div>
+        <div id="porto_box"><a href="https://dawitth.github.io/flight_ticket/" id="flight_search" target="_blank"><img id="flight_search_pic" src='https://i.imgur.com/etbB9o8.jpg'></a>
+            <h2 id="flight_text"><a href="https://dawitth.github.io/flight_ticket/" target="_blank">Cheap Flight Search</a></h2><a href="https://codepen.io/davedaw/full/JJgvGK/" id="leaders_link" target="_blank"><img id="leaders_pic" src='https://i.imgur.com/UyVJI6K.png'></a>
+            <h2 id="leadres_text"><a href="https://codepen.io/davedaw/full/JJgvGK/" target="_blank">Leaders Board - FCC</a></h2><a href="https://dawitth.github.io/marketing_webpage/#" id="leaders_link" target="_blank"><img id="marketing_pic" src='https://i.imgur.com/npQz28N.jpg'></a>
+            <h2 id="marketing_text"><a href="https://dawitth.github.io/marketing_webpage/#" target="_blank">Marketing Agency WebPage</a></h2><img id="loading_pic" src="https://d30y9cdsu7xlg0.cloudfront.net/png/384289-200.png"></div>
+            <div id="contact_box">
+            <div id="subject">
+            Subject<br>
+            <input id="subject_ipt">
+            </div><br>
+            <div id="message">
+            Message<br>
+            <textarea id="message_ipt"></textarea> <button id="send_btn">SEND</button>
+            </div>
+            </div>
+            <div id="resume_box">
+            <iframe height="780" src="https://drive.google.com/file/d/1Ur7D9yOxCdKND-aPoY_DkVqa9_071Eaj/preview" width="700"></iframe>
+            </div>
+            </body>
+            </html>
+
+<style>
+   
+   body {
+   background-image: url("https://images.unsplash.com/46/iYvDeqVGRbebiQv2PIJi_DSC_8407.JPG?auto=format&fit=crop&w=1653&q=80");
+   }
+   #box {
+   position: absolute;
+   width: 400px;
+   height: 500px;
+   z-index: 15;
+   top: 240px;
+   left: 47%;
+   margin: -100px 0 0 -150px;
+   background: white;
+   border-radius: 3%;
+   opacity: 0.7;
+   }
+   #name {
+   position: absolute;
+   left: 90px;
+   top: 170px;
+   }
+   #contact_box {
+   position: absolute;
+   width: 400px;
+   height: 400px;
+   z-index: 15;
+   top: 240px;
+   left: 47%;
+   margin: -100px 0 0 -150px;
+   background: white;
+   border-radius: 3%;
+   opacity: 0.7;
+   }
+   #message_ipt {
+   width: 350px;
+   height: 200px;
+   background-color: #e2fffc;
+   }
+   #message {
+   position: absolute;
+   left: 20px;
+   top: 80px;
+   }
+   #subject {
+   position: absolute;
+   left: 20px;
+   top: 30px;
+   }
+   #subject_ipt {
+   width: 200px;
+   }
+   #send_btn {
+   position: absolute;
+   width: 100px;
+   background-color: black;
+   font-size: 15px;
+   color: white;
+   }
+   hr {
+   margin-top: 100px;
+   }
+   #profile_pic {
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   margin-left: 100px;
+   margin-top: 50px;
+   position: absolute;
+   left: 50px;
+   }
+   #resume_box {
+   position: absolute;
+   width: 400px;
+   height: 400px;
+   z-index: 15;
+   top: 240px;
+   left: 40%;
+   margin: -100px 0 0 -150px;
+   }
+   #bio {
+   position: absolute;
+   top: 250px;
+   left: 30px;
+   margin-left: 65px;
+   font-family: "Comic Sans MS", cursive, sans-serif;
+   font-size: 20px;
+   }
+   #icones {
+   position: absolute;
+   top: 380px;
+   left: 45px;
+   }
+   .fa {
+   margin: 25px;
+   }
+   .fa:hover {
+   color: red;
+   }
+   nav {
+   position: absolute;
+   top: 10px;
+   right: 25px;
+   font-family: "Comic Sans MS", cursive, sans-serif;
+   }
+   button:hover {
+   color: green;
+   }
+   .hvr-float-shadow {
+   display: inline-block;
+   vertical-align: middle;
+   -webkit-transform: perspective(1px) translateZ(0);
+   transform: perspective(1px) translateZ(0);
+   box-shadow: 0 0 1px transparent;
+   position: relative;
+   -webkit-transition-duration: 0.3s;
+   transition-duration: 0.3s;
+   -webkit-transition-property: transform;
+   transition-property: transform;
+   }
+   .hvr-float-shadow:before {
+   pointer-events: none;
+   position: absolute;
+   z-index: -1;
+   content: '';
+   top: 100%;
+   left: 5%;
+   height: 10px;
+   width: 90%;
+   opacity: 0;
+   background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+   background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+   /* W3C */
+   -webkit-transition-duration: 0.3s;
+   transition-duration: 0.3s;
+   -webkit-transition-property: transform, opacity;
+   transition-property: transform, opacity;
+   }
+   .hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
+   -webkit-transform: translateY(-5px);
+   transform: translateY(-5px);
+   /* move the element up by 5px */
+   }
+   .hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
+   opacity: 1;
+   -webkit-transform: translateY(5px);
+   transform: translateY(5px);
+   /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+   }
+   button {
+   background-color: transparent;
+   border: none;
+   font-size: 35px;
+   font-family: "Comic Sans MS", cursive, sans-serif;
+   }
+   #flight_search_pic {
+   position: absolute;
+   width: 340px;
+   top: 50px;
+   left: 20px;
+   }
+   button:focus {
+   outline: 0;
+   color: white;
+   }
+   #loading_pic {
+   position: absolute;
+   width: 140px;
+   top: 290px;
+   left: 550px;
+   }
+   #leaders_pic {
+   position: absolute;
+   width: 340px;
+   top: 290px;
+   left: 30px;
+   }
+   #leadres_text {
+   position: absolute;
+   top: 230px;
+   left: 70px;
+   }
+   #marketing_pic {
+   position: absolute;
+   width: 340px;
+   top: 60px;
+   left: 460px;
+   }
+   #marketing_text {
+   position: absolute;
+   top: 0px;
+   left: 480px;
+   }
+   #porto_box {
+   position: absolute;
+   width: 900px;
+   height: 500px;
+   z-index: 15;
+   top: 240px;
+   left: 30%;
+   margin: -100px 0 0 -150px;
+   background: white;
+   border-radius: 3%;
+   opacity: 0.7;
+   }
+   #flight_pic {
+   width: 150px;
+   height: 150px;
+   }
+   #flight_search {
+   position: absolute;
+   top: 10px;
+   left: 10px;
+   }
+   #flight_text {
+   position: absolute;
+   top: 0px;
+   left: 80px;
+   }
+   a {
+   text-decoration: none;
+   color: black;
+   }
+
+</style>
+    
+    
+<script>
+        
+        //$("#box").hide()
+        $("#contact_box").hide()
+        $("#porto_box").hide()
+        $("#resume_box").hide()
+        $("#home").click(function() {
+                         $("#box").fadeIn("slow")
+                         $("#porto_box").fadeOut("fast")
+                         $("#contact_box").fadeOut("fast")
+                         $("#resume_box").fadeOut("fast")
+                         })
+        $("#portofolio").click(function() {
+                        $("#contact_box").fadeOut("fast")
+                        $("#resume_box").fadeOut("fast")
+                        $("#box").fadeOut("fast")
+                        $("#porto_box").fadeIn("slow")
+                        })
+        $("#contact").click(function() {
+                        $("#resume_box").fadeOut("fast")
+                        $("#porto_box").fadeOut("fast")
+                        $("#box").fadeOut("fast")
+                        $("#contact_box").fadeIn("slow")
+                      })
+        $("#resume").click(function() {
+                       $("#porto_box").fadeOut("fast")
+                       $("#contact_box").fadeOut("fast")
+                       $("#box").fadeOut("fast")
+                       $("#resume_box").fadeIn("slow")
+                       })
+        $('#send_btn').click(function(event) {
+                    var email = 'dawithunegnaw@uvic.ca';
+                    var subject = $("#subject_ipt").val();
+                    var emailBody = $("#message_ipt").val();
+                    document.location = "mailto:" + email + "?subject=" + subject + "&body=" + emailBody;
+                       });
+    
+</script>
