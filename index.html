@@ -25,10 +25,10 @@
                     <a href="https://www.freecodecamp.org/dawitth" target="_blank"><i aria-hidden="true" class="fa fa-free-code-camp fa-3x"></i></a> <a href="https://stackoverflow.com/users/8233884/dawit" target="_blank"><i aria-hidden="true" class="fa fa-stack-overflow fa-3x"></i></a> <a href="https://github.com/dawitth" target="_blank"><i aria-hidden="true" class="fa fa-github fa-3x"></i></a>
                 </div>
                 </div>
-        <div id="porto_box"><a href="https://dawitth.github.io/flight_ticket/" id="flight_search" target="_blank"><img id="flight_search_pic" src='https://i.imgur.com/etbB9o8.jpg'></a>
-            <h2 id="flight_text"><a href="https://dawitth.github.io/flight_ticket/" target="_blank">Cheap Flight Search</a></h2><a href="https://codepen.io/davedaw/full/JJgvGK/" id="leaders_link" target="_blank"><img id="leaders_pic" src='https://i.imgur.com/UyVJI6K.png'></a>
-            <h2 id="leadres_text"><a href="https://codepen.io/davedaw/full/JJgvGK/" target="_blank">Leaders Board - FCC</a></h2><a href="https://dawitth.github.io/marketing_webpage/#" id="leaders_link" target="_blank"><img id="marketing_pic" src='https://i.imgur.com/npQz28N.jpg'></a>
-            <h2 id="marketing_text"><a href="https://dawitth.github.io/marketing_webpage/#" target="_blank">Marketing Agency WebPage</a></h2><img id="loading_pic" src="https://d30y9cdsu7xlg0.cloudfront.net/png/384289-200.png"></div>
+          <div id="porto_box"><a href="https://dawitth.github.io/flight_ticket/" id="flight_search" target="_blank"><img id="flight_search_pic" src='https://i.imgur.com/etbB9o8.jpg'></a>
+	      <h2 id="flight_text"><a href="https://dawitth.github.io/flight_ticket/" target="_blank" id="a_flight">Cheap Flight Search</a></h2><a href="https://codepen.io/davedaw/full/JJgvGK/" id="leaders_link" target="_blank"><img id="leaders_pic" src='https://i.imgur.com/UyVJI6K.png'></a>
+	      <h2 id="leadres_text"><a href="https://codepen.io/davedaw/full/JJgvGK/" target="_blank" id="a_leaders">Leaders Board - FCC</a></h2><a href="https://dawitth.github.io/marketing_webpage/#" id="leaders_link" target="_blank"><img id="marketing_pic" src='https://i.imgur.com/npQz28N.jpg'></a>
+	      <h2 id="marketing_text"><a href="https://dawitth.github.io/marketing_webpage/#" target="_blank" id="a_marketing">Marketing Agency WebPage</a></h2><img id="loading_pic" src="https://d30y9cdsu7xlg0.cloudfront.net/png/384289-200.png"></div>
             <div id="contact_box">
             <div id="subject">
             Subject<br>
@@ -273,6 +273,10 @@
    color: black;
    }
 
+   a:hover{
+   color: #7cd3ff;
+   }
+
 </style>
     
     
@@ -312,5 +316,37 @@
                     var emailBody = $("#message_ipt").val();
                     document.location = "mailto:" + email + "?subject=" + subject + "&body=" + emailBody;
                        });
+    
+         $("#leaders_pic").mouseover(function(){
+	       $("#a_leaders").css({
+             'color' : '#7cd3ff'
+             });
+         }).mouseout(function() {
+              $("#a_leaders").css({
+                'color' : 'black'
+                });
+           });
+
+
+        $("#flight_search_pic").mouseover(function(){
+    	$("#a_flight").css({
+         'color' : '#7cd3ff'
+         });
+        }).mouseout(function() {
+        $("#a_flight").css({
+            'color' : 'black'
+          });
+          });
+
+
+      $("#marketing_pic").mouseover(function(){
+        	$("#a_marketing").css({
+                 'color' : '#7cd3ff'
+             });
+     }).mouseout(function() {
+     $("#a_marketing").css({
+          'color' : 'black'
+        });
+     });
     
 </script>
