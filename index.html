@@ -273,10 +273,6 @@
    color: black;
    }
 
-   a:hover{
-   color: #7cd3ff;
-   }
-
 </style>
     
     
@@ -317,36 +313,40 @@
                     document.location = "mailto:" + email + "?subject=" + subject + "&body=" + emailBody;
                        });
     
-         $("#leaders_pic").mouseover(function(){
-	       $("#a_leaders").css({
-             'color' : '#7cd3ff'
-             });
-         }).mouseout(function() {
-              $("#a_leaders").css({
-                'color' : 'black'
-                });
-           });
+      
+	$("#leaders_pic,#a_leaders").mouseover(function(){
+		$("#a_leaders").css({
+ 	   'color' : '#7cd3ff'
+ 	 });
+	}).mouseout(function() {
+  	$("#a_leaders").css({
+    	'color' : 'black'
+  	});
+	});
 
 
-        $("#flight_search_pic").mouseover(function(){
-    	$("#a_flight").css({
-         'color' : '#7cd3ff'
-         });
-        }).mouseout(function() {
-        $("#a_flight").css({
-            'color' : 'black'
-          });
-          });
+	$("#flight_search_pic,#a_flight").mouseover(function(){
+		$("#a_flight").css({
+	    'color' : '#7cd3ff'
+	  });
+	}).mouseout(function() {
+  	$("#a_flight").css({
+    		'color' : 'black'
+  	});
+	});
 
 
-      $("#marketing_pic").mouseover(function(){
-        	$("#a_marketing").css({
-                 'color' : '#7cd3ff'
-             });
-     }).mouseout(function() {
-     $("#a_marketing").css({
-          'color' : 'black'
-        });
-     });
+	$("#marketing_pic,#a_marketing").mouseover(function(){
+		$("#a_marketing").css({
+	    'color' : '#7cd3ff'
+	  });
+	}).mouseout(function() {
+		  $("#a_marketing").css({
+		    'color' : 'black'
+	  	});
+	});
+
+
+
     
 </script>
